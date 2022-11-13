@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "extensions": [".ts", ".tsx"],
+        "alias": {
+          "tailwind": "./tailwind",
+          "src": "./src",
+          "views": "./src/views",
+          "state": "./src/state",
+          "navigators": "./src/navigators"
+        }
+      }
+    ]
+  ]
+}
