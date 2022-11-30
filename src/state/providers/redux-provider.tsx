@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { store, persistor } from '../store/store';
 import { PersistGate } from 'redux-persist/integration/react';
 
-const StoreProvider: FC = props => {
+const StoreProvider: FC = (props: any) => {
   const { children } = props;
   return (
     <Provider store={store}>

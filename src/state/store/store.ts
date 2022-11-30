@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {combineReducers, configureStore} from '@reduxjs/toolkit';
-import {createSelectorHook} from 'react-redux';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import { createSelectorHook } from 'react-redux';
 import {
   FLUSH,
   PAUSE,
@@ -13,7 +13,7 @@ import {
 } from 'redux-persist';
 import reducers from '../ducks';
 
-const rootReducer = combineReducers({...reducers});
+const rootReducer = combineReducers({ ...reducers });
 
 // Redux persist config
 const persistConfig = {
